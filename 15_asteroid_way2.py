@@ -12,9 +12,7 @@ def DFS(r,c) -> int:
         seen.add( (r,c) )
         curr = G[r][c]
         for i in range(4):
-            rr = r + dr[i]
-            cc = c + dc[i]
-            curr += DFS(rr, cc)
+            curr += DFS( r + dr[i], c + dc[i] )
         return curr
     return 0
 

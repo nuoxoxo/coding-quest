@@ -1,7 +1,6 @@
-line = open(0).read().strip() # .py < _infile_
+line = open(0).read().strip()
 binstr = '000'+bin(int(line, 16))[2:]
 
-# get the table
 D = {}
 with open('infile') as file:
     for line in file:

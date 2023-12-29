@@ -17,6 +17,7 @@ for g in zip(*G):
         assert(R==C)
         break
     c += 1
-err_byte = G[r][c]
-print((err_byte - R) * err_byte)
+res = ( G[r][c] - R ) * G[r][c]
+print(res)
+assert( res in [297] )
 

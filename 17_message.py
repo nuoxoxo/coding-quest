@@ -1,5 +1,4 @@
-line = open(0).read().strip()
-binstr = '000'+bin(int(line, 16))[2:]
+bstr = '000'+  bin(int(open(0).read().strip(), 16))[2:]
 
 D = {}
 with open('infile') as file:
@@ -9,15 +8,15 @@ with open('infile') as file:
 
 res=''
 l = 0
-while l < len(binstr) - 3:
+while l < len(bstr) - 3:
     r = l + 4
-    char = binstr[l:r]
+    char = bstr[l:r]
     if char not in D:
         r += 1
-        char = binstr[l:r]
+        char = bstr[l:r]
     if char not in D:
         r += 2
-        char = binstr[l:r]
+        char = bstr[l:r]
     if char not in D:
         break
     res += D[char]

@@ -6,9 +6,9 @@ My solutions for [codingquest.io](https://codingquest.io/)
 
 | fi. | no. | what |
 | :----: | :-----: | :--- |
-| ☑️      |    1    |      |
-| ☑️      |    2    |      |
-| ☑️      |    3    |      |
+| ☑️      |    1    | Examine 60-sec blocks
+| ☑️      |    2    | Lottery
+| ☑️      |    3    | Distance in 3D
 | ☑️      |    4    | Connect 4 (sim a thousand games)
 |        |    5    |      |
 |        |    6    |      |
@@ -20,9 +20,9 @@ My solutions for [codingquest.io](https://codingquest.io/)
 |        |   12    |      |
 |        |   13    |      |
 | ☑️      |   14    | Wordle (guess a word)
-| ☑️      |   15    |      |
+| ☑️      |   15    | Floodfill DFS
 | ☑️      |   16    | Hex string
-| ☑️      |   17    | Binary string
+| ☑️      |   17    | Binary string 
 |        |   18    |      |
 |        |   19    |      |
 |        |   20    |      |

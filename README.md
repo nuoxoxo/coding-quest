@@ -14,7 +14,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    6    | Interpret a program 
 |        |    7    |      |
 |        |    8    |      |
-|        |    9    |      |
+|        |    9    | BFS
 |        |   10    |      |
 |        |   11    |      |
 |        |   12    |      |

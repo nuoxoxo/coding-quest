@@ -12,8 +12,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    4    | Connect 4 (sim a thousand games)
 | ☑️      |    5    | SHA256
 | ☑️      |    6    | Interpret a program 
-|        |    7    |      |
-|        |    8    | Vigenère cipher
+| ☑️      |    7    | (GCD speeds up only a little)
+| ☑️      |    8    | Vigenère cipher
 |        |    9    | BFS
 |        |   10    |      |
 |        |   11    |      |

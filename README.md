@@ -13,7 +13,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    5    | SHA256
 | ☑️      |    6    | Interpret a program 
 |        |    7    |      |
-|        |    8    |      |
+|        |    8    | Vigenère cipher
 |        |    9    | BFS
 |        |   10    |      |
 |        |   11    |      |

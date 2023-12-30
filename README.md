@@ -11,7 +11,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    3    | Distance in 3D
 | ☑️      |    4    | Connect 4 (sim a thousand games)
 | ☑️      |    5    | SHA256
-| ☑️      |    6    | Interpret a rrogram 
+| ☑️      |    6    | Interpret a program 
 |        |    7    |      |
 |        |    8    |      |
 |        |    9    |      |

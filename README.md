@@ -10,8 +10,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    2    | Lottery
 | ☑️      |    3    | Distance in 3D
 | ☑️      |    4    | Connect 4 (sim a thousand games)
-|        |    5    | (Currently doing) _idea: `$md5sum --version`_
-|        |    6    |      |
+| ☑️      |    5    | SHA256
+| ☑️      |    6    | Interpret a rrogram 
 |        |    7    |      |
 |        |    8    |      |
 |        |    9    |      |

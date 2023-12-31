@@ -14,8 +14,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    6    | Interpret a program 
 | ☑️      |    7    | (GCD speeds up only a little)
 | ☑️      |    8    | Vigenère cipher
-|        |    9    | BFS
-|        |   10    |      |
+| ☑️      |    9    | BFS
+|        |   10    | Steganography
 |        |   11    |      |
 |        |   12    |      |
 |        |   13    |      |

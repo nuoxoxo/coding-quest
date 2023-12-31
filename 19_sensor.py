@@ -1,5 +1,7 @@
 B = [int(_)for _ in open(0).read().splitlines()]
 epar = []
+"""
+# original soln
 for b in B:
     bins = format(bin(b))
     bins = bins[2:].zfill(16)
@@ -10,9 +12,12 @@ for b in B:
         temp[0] = '0'
         newb = ''.join(temp)
         epar.append(int(newb, 2))
+"""
 
-res = sum(epar) // len(epar)
-print('par/',epar)
-print(res)
+epar = [(int('0' + format(b, '016b')[1:], 2)) for b in B if bin(b).count('1') % 2 == 0]
+res = round(sum(epar) / len(epar))
+print('res/',res)
 
 assert res in [ 297, 17837 ]
+
+print('par/',epar)

@@ -24,7 +24,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
 | ☑️      |   18    |      |
-| ☑️      |   19    | Mod the 16th bit (the leftnmost bit)
+| ☑️      |   19    | 16th bit flipped (the leftnmost bit)
 | ☑️      |   20    | Tic tac toe (brute-forced it)
 |        |   21    | Hex <--> bit
 |        |   22    | Pixels to letters

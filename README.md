@@ -16,20 +16,20 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    8    | Vigenère cipher
 | ☑️      |    9    | BFS
 |        |   10    | Steganography
-|        |   11    |      |
-|        |   12    |      |
-|        |   13    |      |
+|        |   11    | (null)
+|        |   12    | (null)
+|        |   13    | Snakes and ladders
 | ☑️      |   14    | Wordle (guess a word)
 | ☑️      |   15    | Floodfill DFS
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
 |        |   18    |      |
 |        |   19    |      |
-|        |   20    |      |
+|        |   20    | Tic tac toe
 |        |   21    |      |
 |        |   22    |      |
-|        |   23    |      |
-|        |   24    |      |
-|        |   25    |      |
+|        |   23    | Pixels to letters
+|        |   24    | Snake
+|        |   25    | Traveling salesman
 |        |   26    | Binary search tree
 |        |   27    | Dijkstra (shortest path)

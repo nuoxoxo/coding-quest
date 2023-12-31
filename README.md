@@ -18,7 +18,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 |        |   10    | Steganography
 |        |   11    | -
 |        |   12    | -
-|        |   13    | Snakes and ladders
+| ☑️      |   13    | Snakes and ladders
 | ☑️      |   14    | Wordle (guess a word)
 | ☑️      |   15    | Floodfill DFS
 | ☑️      |   16    | Hex string

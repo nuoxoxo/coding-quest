@@ -26,8 +26,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   18    |      |
 | ☑️      |   19    | 16th bit flipped (the leftnmost bit)
 | ☑️      |   20    | Tic tac toe (brute-forced it)
-|        |   21    | Hex <--> bit
-|        |   22    | Pixels to letters
+| ☑️      |   21    | Decoding TCP/IP packets
+| ☑️      |   22    | Pixels to letters
 |        |   23    | Grid problem (Asteroid II)
 |        |   24    | Snake
 |        |   25    | Traveling salesman

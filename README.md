@@ -23,8 +23,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   15    | Floodfill DFS
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
-|        |   18    |      |
-|        |   19    |      |
+| ☑️      |   18    |      |
+| ☑️      |   19    | Mod the 16th bit (the leftnmost bit)
 |        |   20    | Tic tac toe
 |        |   21    |      |
 |        |   22    |      |

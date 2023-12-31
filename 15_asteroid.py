@@ -1,4 +1,4 @@
-G = [ [int(d) for d in _.split(' ')] for _ in open(0).read().splitlines()]
+G = [ [int(d) for d in _.split()] for _ in open(0).read().splitlines()]
 
 dr=[-1,0,1, 0]
 dc=[ 0,1,0,-1]
@@ -22,4 +22,4 @@ for r in range(R):
             N += 1
 
 print(res//N)
-assert(res//N in [33])
+assert res//N in [33]

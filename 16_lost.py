@@ -1,4 +1,4 @@
-G = [[ int(_, 16) for _ in line.split(' ')] for line in open(0).read().splitlines()]
+G = [[ int(_, 16) for _ in line.split()] for line in open(0).read().splitlines()]
 
 r,c=0,0
 R,C=None, None # diffs
@@ -19,5 +19,5 @@ for g in zip(*G):
     c += 1
 res = ( G[r][c] - R ) * G[r][c]
 print(res)
-assert( res in [297] )
+assert res in [297]
 

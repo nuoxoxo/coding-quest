@@ -1,5 +1,5 @@
 import math
-coors = [list(map(int, line.split(' '))) for line in open (0).read().splitlines()]
+coors = [list(map(int, line.split())) for line in open (0).read().splitlines()]
 res = 0
 for i in range(1, len(coors)):
     x, y, z = coors[i]
@@ -9,4 +9,4 @@ for i in range(1, len(coors)):
     z = abs(z - c)
     res += math.floor( math.sqrt(x*x + y*y + z*z) )
 print(res)
-assert (res==64579603)
+assert res in [ 64579603 ]

@@ -1,4 +1,4 @@
-lines = [list(map(int, line.split(' '))) for line in open (0).read().splitlines()]
+lines = [list(map(int, line.split())) for line in open (0).read().splitlines()]
 
 seen=set()
 R = C = 100# 10 # test

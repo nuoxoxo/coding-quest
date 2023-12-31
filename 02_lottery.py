@@ -1,4 +1,4 @@
-lines = [list(map(int, line.split(' '))) for line in open (0).read().splitlines()]
+lines = [list(map(int, line.split())) for line in open (0).read().splitlines()]
 D = {3:1,4:10,5:100,6:1000}
 W = list(map(int, '12 48 30 95 15 55 97'.split(' ')))
 
@@ -13,4 +13,4 @@ for line in lines:
     if wins in D:
         T.append(D[wins])
 print(sum(T))
-assert (sum(T) in [56])
+assert sum(T) in [ 56 ]

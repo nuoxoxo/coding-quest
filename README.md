@@ -35,3 +35,5 @@ My solutions for [codingquest.io](https://codingquest.io/)
 |        |   27    | Dijkstra (shortest path)
 
 ![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)
+
+![](https://i.imgur.com/Su2FnSd.jpg)

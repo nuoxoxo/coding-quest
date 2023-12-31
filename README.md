@@ -33,3 +33,5 @@ My solutions for [codingquest.io](https://codingquest.io/)
 |        |   25    | Traveling salesman
 |        |   26    | Binary search tree
 |        |   27    | Dijkstra (shortest path)
+
+![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)

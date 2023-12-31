@@ -16,8 +16,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    8    | Vigenère cipher
 | ☑️      |    9    | BFS
 |        |   10    | Steganography
-|        |   11    | (null)
-|        |   12    | (null)
+|        |   11    | -
+|        |   12    | -
 |        |   13    | Snakes and ladders
 | ☑️      |   14    | Wordle (guess a word)
 | ☑️      |   15    | Floodfill DFS

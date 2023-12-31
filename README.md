@@ -20,15 +20,15 @@ My solutions for [codingquest.io](https://codingquest.io/)
 |        |   12    | -
 | ☑️      |   13    | Snakes and ladders
 | ☑️      |   14    | Wordle (guess a word)
-| ☑️      |   15    | Floodfill DFS
+| ☑️      |   15    | Floodfill DFS (Asteroid I)
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
 | ☑️      |   18    |      |
 | ☑️      |   19    | Mod the 16th bit (the leftnmost bit)
 | ☑️      |   20    | Tic tac toe (brute-forced it)
-|        |   21    |      |
-|        |   22    |      |
-|        |   23    | Pixels to letters
+|        |   21    | Hex <--> bit
+|        |   22    | Pixels to letters
+|        |   23    | Grid problem (Asteroid II)
 |        |   24    | Snake
 |        |   25    | Traveling salesman
 |        |   26    | Binary search tree

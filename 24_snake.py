@@ -1,6 +1,6 @@
 lines = open(0).read().splitlines()
 
-fruits = [tuple(map(int, coor.split(','))) for coor in lines[1].split()]
+fruits = [tuple(map(int,coor.split(','))) for coor in lines[1].split()]
 steps = lines[-1]
 D = {'L':[0,-1],'R':[0,1],'U':[-1,0],'D':[1,0]}
 # print(fruits)
@@ -8,7 +8,8 @@ D = {'L':[0,-1],'R':[0,1],'U':[-1,0],'D':[1,0]}
 # print(D)
 
 def move(snake, R, C, F, step):
-    dc, dr = D[step] # important:
+
+    dc, dr = D[step] # important:...
     r, c = snake[0] # i-n-v-e-r-s-e-d xD
     last = (r,c)
     r += dr
@@ -30,13 +31,8 @@ def move(snake, R, C, F, step):
         last = temp
     return ( snake, False )
 
-res = 0
+def DBG(i,res,Snake, R, C, f):
 
-Snake = [(0,0)]
-R = C = 8 if len(fruits) == 4 else 20
-f = tuple(fruits.pop(0))[::-1] if fruits else []
-
-def DBG(i,Snake, R, C, f):
     print(i,'DBG/res/',res,'snk/',Snake,'f/',f[::-1])
     G = [['.' for _ in range(R)] for _ in range(R)]
     r,c = f
@@ -44,20 +40,27 @@ def DBG(i,Snake, R, C, f):
     for r,c in Snake: G[c][r] = 'S'
     for line in G: print(''.join(line))
 
+def game(fruits, steps, D):
 
-for i, step in enumerate(steps):
-    state = move(Snake, R, C, f, step)
-    if not state:
-        print('steps/',i + 1,'res/',res)
-        break
-    Snake, Eat = state
-    if Eat:
-        res += 100
-        if f: f = tuple(fruits.pop(0))[::-1] if fruits else []
-    if i in [49,50,99,100]: DBG(i+1,Snake, R, C, f) # long input dbg
-    if len(fruits) < 10: DBG(i+1,Snake, R, C, f) # Sample dbg
-    res += 1
+    res = 0
+    Snake = [(0,0)]
+    R = C = 8 if len(fruits) == 4 else 20
+    f = tuple(fruits.pop(0))[::-1] if fruits else []
+    for i, step in enumerate(steps):
+        state = move(Snake, R, C, f, step)
+        if not state:
+            print('steps/',i + 1,'res/',res)
+            break
+        Snake, Eat = state
+        if Eat:
+            res += 100
+            if f: f = tuple(fruits.pop(0))[::-1] if fruits else []
+        if i in [49,50,99,100]:DBG(i+1, res, Snake, R, C, f) # long input dbg
+        if len(fruits) < 10: DBG(i + 1, res, Snake, R, C, f) # Sample dbg
+        res += 1
+    return res
 
-print(res)
+res = game (fruits, steps, D)
+print( res )
 
 assert res in [320, 4240]

@@ -36,4 +36,6 @@ My solutions for [codingquest.io](https://codingquest.io/)
 
 ![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)
 
+![[(https://codingquest.io/may2023/2023_day_8_sanity_check.png)
+
 <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:500px;" />

@@ -20,7 +20,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 |        |   12    | ( empty )
 | ☑️      |   13    | Snakes and ladders
 | ☑️      |   14    | Wordle (guess a word)
-| ☑️      |   15    | Floodfill DFS (Asteroid I)
+| ☑️      |   15    | Floodfill DFS - Asteroid I
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
 | ☑️      |   18    | simple dict
@@ -28,7 +28,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   20    | Tic tac toe (brute-forced it)
 | ☑️      |   21    | Decoding TCP/IP packets
 | ☑️      |   22    | Pixels to letters
-|        |   23    | Grid problem (Asteroid II)
+|        |   23    | Grid problem - Asteroid II
 |        |   24    | Snake
 |        |   25    | Traveling salesman
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)

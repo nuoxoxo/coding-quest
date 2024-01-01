@@ -23,7 +23,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   15    | Floodfill DFS (Asteroid I)
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
-| ☑️      |   18    |      |
+| ☑️      |   18    | simple dict
 | ☑️      |   19    | 16th bit flipped (the leftnmost bit)
 | ☑️      |   20    | Tic tac toe (brute-forced it)
 | ☑️      |   21    | Decoding TCP/IP packets

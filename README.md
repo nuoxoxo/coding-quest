@@ -15,7 +15,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    7    | (GCD speeds up only a little)
 | ☑️      |    8    | Vigenère cipher
 | ☑️      |    9    | BFS
-|        |   10    | Steganography
+| ☑️      |   10    | Steganography
 |        |   11    | -
 |        |   12    | -
 | ☑️      |   13    | Snakes and ladders
@@ -23,15 +23,15 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   15    | Floodfill DFS (Asteroid I)
 | ☑️      |   16    | Hex string
 | ☑️      |   17    | Binary string 
-| ☑️      |   18    |      |
+| ☑️      |   18    | simple dict
 | ☑️      |   19    | 16th bit flipped (the leftnmost bit)
 | ☑️      |   20    | Tic tac toe (brute-forced it)
-|        |   21    | Hex <--> bit
-|        |   22    | Pixels to letters
+| ☑️      |   21    | Decoding TCP/IP packets
+| ☑️      |   22    | Pixels to letters
 |        |   23    | Grid problem (Asteroid II)
 |        |   24    | Snake
 |        |   25    | Traveling salesman
-|        |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
+| ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
 |        |   27    | Dijkstra (shortest path)
 
 ![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)

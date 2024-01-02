@@ -1,0 +1,2 @@
+BEGIN{w=60;b=100;t=3600}{split($0,f," ");l[NR,"c"]=f[1];l[NR,"r"]=f[2];l[NR,"dc"]=f[3];l[NR,"dr"]=f[4]}END{for(i=0;i<b;i++)for(j=0;j<b;j++)S[i,j]=1;for(line=1;line<=NR;line++){c=l[line,"c"];r=l[line,"r"];dc=l[line,"dc"];dr=l[line,"dr"];sr=dr*t+r;sc=dc*t+c;for(sec=0;sec<=w;sec++) { R=dr*sec+sr; C=dc*sec+sc; R=int(R); C=int(C); if(-1<R&&R<b&&-1<C&&C<b) S[R,C]=0}}for(i=0;i<b;i++) for(j=0;j<b;j++)if(S[i,j]==1){print j":"i;exit}}
+

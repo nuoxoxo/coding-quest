@@ -9,7 +9,7 @@ BEGIN {
 {
     wins = 0
     for (i = 1; i <= NF; i++){
-        for (j = 1; j <= length( set ); j++) {
+        for ( j in set ) { # j = 1; j <= length( set ); j++) {
             if ( $i == set[j] )
                 wins++
         }

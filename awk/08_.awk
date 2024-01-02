@@ -1,0 +1,2 @@
+{a="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,;:?! '()";b="Roads? Where We're Going, We Don't Need Roads.";c=Decoder(b,a,$0);print"result/",c}function Decoder(b,a,d,e,f){e=(length(d)-1)%length(b);f=length(d)-1;c="";while(f>-1){g=substr(d,f+1,1);if(index(a,g)==0){c=g c;f--;e=(e-1+length(b))%length(b);continue}h=substr(b,e+1,1);i=(index(a,h)+1)%length(a);j=index(a,g);k=(j-i+length(a))%length(a);l=substr(a,k+1,1);c=l c;f--;e=(e-1+length(b))%length(b)}return c}
+

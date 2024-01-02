@@ -1,5 +1,5 @@
 BEGIN {
-    line = "12 48 30 95 15 55 97"
+    line = split("12 48 30 95 15 55 97", set, " ")
     D [3] = 1
     D [4] = 10
     D [5] = 100
@@ -9,13 +9,14 @@ BEGIN {
 {
     wins = 0
     for (i = 1; i <= NF; i++){
-        if ( index(line, $i) > 0 ) {
-            wins++
+        for (j = 1; j <= length( set ); j++) {
+            if ( $i == set[j] )
+                wins++
         }
     }
     res += D[wins]
     if (D[wins] != 0) {
-        print "line/" $0 " win/" wins " D[wins]/" D[wins] 
+        print "line/" $0 " win/" wins " D[wins]/" D[wins] " cmp/" line 
     }
 }
 END {

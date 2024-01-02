@@ -9,7 +9,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    1    | Examine 60-sec blocks
 | ☑️      |    2    | Lottery
 | ☑️      |    3    | Distance in 3D
-| ☑️      |    4    | Connect 4 (sim a thousand games)
+| ☑️      |    4    | Connect 4 
 | ☑️      |    5    | SHA256
 | ☑️      |    6    | Interpret a program 
 | ☑️      |    7    | (GCD could only speed up a little)

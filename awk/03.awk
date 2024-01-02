@@ -1,5 +1,3 @@
-function abs (n) { return n > 0 ? n : -n }
-
 {
     lines[NR] = $0
 } END {
@@ -14,3 +12,4 @@ function abs (n) { return n > 0 ? n : -n }
     }
     print "res/",res
 }
+function abs (n) { return n > 0 ? n : -n }

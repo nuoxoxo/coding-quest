@@ -39,3 +39,5 @@ My solutions for [codingquest.io](https://codingquest.io/)
 ![](https://codingquest.io/may2023/2023_day_8_sanity_check.png)
 
 <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:500px;" />
+
+<img src="https://i.imgur.com/MZUQHRb.jpg" style="width:500px;" />

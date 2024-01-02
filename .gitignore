@@ -9,3 +9,4 @@
 !*.awk
 !Makefile
 test*
+!awk

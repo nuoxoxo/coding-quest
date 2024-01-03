@@ -32,7 +32,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   24    | Snake
 | ☑️      |   25    | Traveling salesman (TSP)
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
-| ☑️      |   27    | Dijkstra (classic)
+| ☑️      |   27    | Dijkstra classic
 
 <!-- ![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)
 

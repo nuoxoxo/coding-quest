@@ -34,9 +34,11 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
 | ☑️      |   27    | Dijkstra (classic)
 
-![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)
+<!-- ![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)
 
 ![](https://codingquest.io/may2023/2023_day_8_sanity_check.png)
+
+-->
 
 <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:500px;" />
 

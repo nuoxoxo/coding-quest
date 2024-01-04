@@ -1,0 +1,1 @@
+BEGIN{C=S=0}{n=b=$0;B="";while(n>0){B=n%2 B;n=int(n/2)}while(length(B)!=16){B="0"B}temp=B;ones=gsub(/1/,"",temp);if(ones%2==0){result="0"substr(B,2);ep[b]=b2d(result);S+=b2d(result);C++;}}END{if(C<1)print"xD";res=int(S/C+0.5);print"res/",res;for(ee in ep){print"ee/",ee,"[]/",ep[ee]}}function b2d(BS){dec=0;for(n=1;n<=length(BS);n++){char=substr(BS,n,1);dec=dec*2+char}return dec}

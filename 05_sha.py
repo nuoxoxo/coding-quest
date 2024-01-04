@@ -30,6 +30,7 @@ for i, rec in enumerate(lines):
             L = '|'.join( rec[:3] ).encode()
             H = hashlib.sha256( L ).hexdigest()
             if H.startswith('000000'):
+                print(mining,H)
                 rec[-1] = H
                 if i < len(lines) - 1:
                     lines[i + 1][2] = H

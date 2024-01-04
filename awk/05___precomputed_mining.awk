@@ -1,4 +1,5 @@
 function get_sha256sum(record) {
+
     data = record[1] FS record[2] FS record[3]
 
     # always some discrepancies in calc-ing SHA256
@@ -28,11 +29,25 @@ function print_record(idx, record) {
 
 BEGIN {
     FS = "|"
+    I_KNOW_THEM[1] = 4675746
+    I_KNOW_THEM[2] = 10479258
+    I_KNOW_THEM[3] = 1280359
+    I_KNOW_THEM[4] = 18147393
+    I_KNOW_THEM[5] = 35728140
+    I_KNOW_THEM[6] = 821649
+    I_KNOW_THEM[7] = 13953955
+    I_KNOW_THEM[8] = 8447017
+    I_KNOW_THEM[9] = 7103037
+    I_KNOW_THEM[10] = 7034044
+    I_KNOW_THEM[11] = 20596537
+    I_KNOW_THEM[12] = 23807772
+    I_KNOW_THEM[13] = 17511092
 }
 {
     lines[NR] = $0
     split($0, line, "|")
-
+    if ( found )
+        line [3] = temp
     old_hash = line[4]
     new_hash = get_sha256sum(line)
 
@@ -45,24 +60,19 @@ BEGIN {
     }
 
     if (found) {
-        mining = -1
-        while (1) {
-            mining++
-            line[2] = mining
-            new_hash = get_sha256sum(line)
-            if ( mining % 100 == 0 ) print "mining/",mining,"gen/",new_hash
-            if (substr(new_hash, 1, 6) == "000000") {
-                line[4] = new_hash
-                if (NR < length(lines)) {
-                    split(lines[NR + 1], next_record, "|")
-                    next_record[3] = new_hash
-                    lines[NR + 1] = next_record[1] FS next_record[2] FS next_record[3] FS next_record[4]
-                }
-                break
-            }
-        }
-        print "(new) " line[4]
+        idx++
+        mining = I_KNOW_THEM [idx]
+        line[2] = mining
+        new_hash = get_sha256sum(line)
+        #if ( mining % 100 == 0 ) print "mining/",mining,"gen/",new_hash
+        assert (substr(new_hash, 1, 6) == "000000")
+        line[4] = new_hash
+        temp = new_hash
+        print mining,line[4]
+        res = line[4]
     }
     print ""
 }
-
+END {
+    print "res/",res
+}

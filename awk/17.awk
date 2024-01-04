@@ -38,22 +38,14 @@ END {
 }
 
 function hex_to_bin(hex) {
-
-    split("0 1 2 3 4 5 6 7 8 9 a b c d e f", charset, " ")
     res = ""
     for (i = 1; i <= length(hex); i++) {
         char = substr(hex, i, 1)
-        for (j = 1; j <= 16; j++) {
-            if (char == charset[j]) {
-                idx = j - 1
-                break
-            }
-        }
+        idx = index("0123456789abcdef", char) - 1
         for (j = 3; j >= 0; j--) {
             res = res sprintf("%01d", int(idx / 2^j) >= 1)
-            idx = idx % 2^j
+            idx %= 2^j
         }
     }
     return res
 }
-

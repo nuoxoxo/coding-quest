@@ -47,7 +47,7 @@ BEGIN {
     lines[NR] = $0
     split($0, line, "|")
     if ( found )
-        line [3] = temp
+        line [3] = res
     old_hash = line[4]
     new_hash = get_sha256sum(line)
 
@@ -66,10 +66,9 @@ BEGIN {
         new_hash = get_sha256sum(line)
         #if ( mining % 100 == 0 ) print "mining/",mining,"gen/",new_hash
         assert (substr(new_hash, 1, 6) == "000000")
-        line[4] = new_hash
-        temp = new_hash
-        print mining,line[4]
-        res = line[4]
+        print "mining/",mining
+        print "result/",new_hash
+        res = new_hash
     }
     print ""
 }

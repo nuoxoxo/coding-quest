@@ -44,10 +44,7 @@ func Solution_strings_fields(checks[7]int, pts map[int]int) int {
     words := strings.Fields( line )
     temp := 0
     for _, word := range words {
-      num, err := strconv.Atoi( word )
-      if err != nil {
-        panic(err)
-      }
+      num, _ := strconv.Atoi( word )
       for _, check := range checks {
         if num == check {
           temp++
@@ -74,10 +71,7 @@ func Solution_regex( checks [7]int, pts map[int]int )int{
     matches := re.FindAllString( line, -1 )
     temp := 0
     for _, match := range matches {
-      num, err := strconv.Atoi( match )
-      if err != nil {
-        panic(err)
-      }
+      num, _ := strconv.Atoi( match )
       for _, check := range checks {
         if num == check {
           temp++

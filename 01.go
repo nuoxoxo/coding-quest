@@ -46,7 +46,7 @@ func main () {
   // Assert
   if res != 6248 && res != 10 {
 
-    fmt.Println( res, 6248,"/AssertionError" )
+    fmt.Println( res, "/AssertionError" )
   }
 }
 

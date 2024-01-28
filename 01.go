@@ -13,14 +13,14 @@ func main () {
   var DG int = 60
 
   scanner := bufio.NewScanner( os.Stdin )
-  fmt.Println( "here" )
+
   for scanner.Scan() {
     line := scanner.Text()
     num, _ := strconv.Atoi( line )
     A = append(A, num)
     
     // DBG
-    fmt.Println ("/dbg:line num len :", line, num, len(A) )
+    // fmt.Println ("/dbg:line num len :", line, num, len(A) )
   }
 
   res := 0

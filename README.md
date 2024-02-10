@@ -40,6 +40,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 
 -->
 
+<img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:500px;" />
+
 <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:500px;" />
 
 <img src="https://i.imgur.com/MZUQHRb.jpg" style="width:500px;" />

@@ -4,8 +4,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 
 <!-- ![](https://codingquest.io/alien-256x256.png) -->
 
-| fi. | no. | what |
-| :----: | :-----: | :--- |
+| fi.    | no.     | what | &#8302; | _'24_   | what |
+| :----: | :-----: | :--- | :-----: | :-----: | :--- |
 | ☑️      |   27    | Dijkstra classic
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
 | ☑️      |   25    | Traveling salesman (TSP)
@@ -32,7 +32,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |    4    | Connect 4 
 | ☑️      |    3    | Distance in 3D
 | ☑️      |    2    | Lottery
-| ☑️      |    1    | Examine 60-sec blocks
+| ☑️      |    1    | Examine 60-sec blocks || 1 | _TBA : Monday 4th March_
 
 <!-- ![](https://mathworld.wolfram.com/images/eps-svg/MagicSquareNumerology_851.svg)
 

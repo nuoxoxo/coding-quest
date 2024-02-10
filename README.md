@@ -13,8 +13,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   23    | Grid problem - Asteroid II
 | ☑️      |   22    | Pixels to letters
 | ☑️      |   21    | Decoding TCP/IP packets
-| ☑️      |   20    | Tic tac toe (brute-forced it)
-| ☑️      |   19    | 16th bit flipped (the leftmost bit)
+| ☑️      |   20    | Tic tac toe (brute-forced)
+| ☑️      |   19    | 16th/leftmost bit flipped
 | ☑️      |   18    | simple dict
 | ☑️      |   17    | Binary string 
 | ☑️      |   16    | Hex string

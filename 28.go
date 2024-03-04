@@ -27,36 +27,6 @@ func main () {
         } else if contains(SUB, cost) {
             D[ name ] -= temp
         }
-        /*
-        for _, cat := range ADD {
-            if cost == cat {
-                temp, err := strconv.Atoi( F[2] )
-                if err == nil {
-                    _, ok := D[name]
-                    if ok {
-                        D[name] += temp
-                    } else {
-                        D[name] = temp
-                    }
-                }
-                break
-            }
-        }
-        for _, cat := range SUB {
-            if cost == cat {
-                temp, err := strconv.Atoi( F[2] )
-                if err == nil {
-                    _, ok := D[name]
-                    if ok {
-                        D[name] -= temp
-                    } else {
-                        D[name] = -temp
-                    }
-                }
-                break
-            }
-        }
-        */
     }
     var keys []string
     for key := range D {

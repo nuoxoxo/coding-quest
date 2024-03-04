@@ -20,7 +20,8 @@ func main () {
         name, cost := F[0][:len(F[0])-1], strings.ToLower( F[1] )
         temp, err := strconv.Atoi( F[2] )
         if err != nil {
-            fmt.Println("/wtf")
+            fmt.Println(err)
+            continue
         }
         if contains(ADD, cost) {
             D[ name ] += temp

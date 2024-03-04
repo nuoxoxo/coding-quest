@@ -4,8 +4,14 @@ My solutions for [codingquest.io](https://codingquest.io/)
 
 <!-- ![](https://codingquest.io/alien-256x256.png) -->
 
-| fi.    | no.     | what | &#8302; | '24     | what |
-| :----: | :-----: | :--- | :-----: | :-----: | :--- |
+| fi.    | no.     | what 
+| :----: | :-----: | :--- 
+| 2024 |
+||
+| ☑️      |   28    | Spaceliners
+||
+| 2023
+||
 | ☑️      |   27    | Dijkstra classic
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
 | ☑️      |   25    | Traveling salesman (TSP)
@@ -16,6 +22,9 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   20    | Tic tac toe (brute-forced)
 | ☑️      |   19    | 16th/leftmost bit flipped
 | ☑️      |   18    | simple dict
+||
+| 2022
+||
 | ☑️      |   17    | Binary string 
 | ☑️      |   16    | Hex string
 | ☑️      |   15    | Floodfill DFS - Asteroid I

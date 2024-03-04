@@ -18,6 +18,16 @@ func main () {
     for scanner.Scan() {
         F := strings.Fields( scanner.Text() )
         name, cost := F[0][:len(F[0])-1], strings.ToLower( F[1] )
+        temp, err := strconv.Atoi( F[2] )
+        if err != nil {
+            fmt.Println("/wtf")
+        }
+        if contains(ADD, cost) {
+            D[ name ] += temp
+        } else if contains(SUB, cost) {
+            D[ name ] -= temp
+        }
+        /*
         for _, cat := range ADD {
             if cost == cat {
                 temp, err := strconv.Atoi( F[2] )
@@ -46,6 +56,7 @@ func main () {
                 break
             }
         }
+        */
     }
     var keys []string
     for key := range D {
@@ -61,5 +72,14 @@ func main () {
     if D[keys[0]] != 191274 {
         fmt.Println("/assertError")
     }
+}
+
+func contains(arr []string, name string)bool{
+    for _, key := range arr {
+        if name == key {
+            return true
+        }
+    }
+    return false
 }
 

@@ -5,7 +5,7 @@ SUB = ['discount', 'rebate']
 
 lines = open('28.0').read().splitlines()
 
-def Solver (List:str) -> int:
+def Solver(lines) -> int:
     C = defaultdict(int)
     curr = None
     for line in lines:

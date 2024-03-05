@@ -1,5 +1,4 @@
 lines = open('29.0').read().splitlines()
-#lines = open('test').read().splitlines()
 
 def brute_force(lines) -> None:
     print('/bruteforce')
@@ -8,35 +7,29 @@ def brute_force(lines) -> None:
     Ps = '10.0.0.0'
     Pe = '10.0.254.254'
     IN, OUT = 0, 0
-    def within(line, s, e):
-        s = [int(_) for _ in s.split('.')]
-        e = [int(_) for _ in e.split('.')]
-        res = True
-        line = [int(_) for _ in line.split('.')]
+    def inside(line, s, e):
+        s, e = [int(_) for _ in s.split('.')], [int(_) for _ in e.split('.')]
         for i in range(4):
             if not s[i] <= line[i] <= e[i]:
-                res = False
-                break
-        return res
-    EXT = set()
+                return False
+        return True
+    EXT = []
     for line in lines:
         temp = line[24:32]
         S = []
         for i in range(0,7,2):
-            S.append(str(int( temp[i:i+2],16 )))
-        S = '.'.join(S)
+            S.append(int( temp[i:i+2],16 ))
         temp = line[32:41]
         D = []
         for i in range(0,7,2):
-            D.append(str(int( temp[i:i+2],16 )))
-        D = '.'.join(D)
+            D.append(int( temp[i:i+2],16 ))
         N = int(line[4:8], 16)
-        if within(S, Is, Ie) or within(D, Is, Ie):
+        if inside(S, Is, Ie) or inside(D, Is, Ie):
             IN += N
-        if within(S, Ps, Pe) or within(D, Ps, Pe):
+        if inside(S, Ps, Pe) or inside(D, Ps, Pe):
             OUT += N
-        else:EXT.add((S, D))
-    print('/ext', len(EXT))
+        else:EXT.append([S, D])
+    print('/ext', len(EXT), '\n/top', EXT[0])
     print('/res', str(IN) + '/' + str(OUT))
 
 [ brute_force ][ 0 ]( lines )

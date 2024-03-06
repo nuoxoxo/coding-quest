@@ -8,6 +8,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | :----: | :-----: | :--- 
 | 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:21px;" />
 ||
+| ☑️      |   30    | RLE: Run-length encoding
 | ☑️      |   29    | IPv4
 | ☑️      |   28    | Spaceliners
 ||

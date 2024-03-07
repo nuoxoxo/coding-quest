@@ -8,6 +8,9 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | :----: | :-----: | :--- 
 | 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:21px;" />
 ||
+| ☑️      |   31    | 3 dimensional pythagoras
+| ☑️      |   30    | Run-length encoding (RLE)
+| ☑️      |   29    | IPv4
 | ☑️      |   28    | Spaceliners
 ||
 | 2023   | <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:21px;" />

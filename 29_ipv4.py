@@ -26,10 +26,12 @@ def brute_force(lines) -> None:
         N = int(line[4:8], 16)
         if inside(S, Is, Ie) or inside(D, Is, Ie):
             IN += N
-        if inside(S, Ps, Pe) or inside(D, Ps, Pe):
+        elif inside(S, Ps, Pe) or inside(D, Ps, Pe):
             OUT += N
         else:EXT.append([S, D])
-    print('/ext', len(EXT), '\n/top', EXT[0])
+    print('/ext', len(EXT))
+    if len(EXT) != 0:
+        print('/top', EXT[0])
     print('/res', str(IN) + '/' + str(OUT))
 
 [ brute_force ][ 0 ]( lines )

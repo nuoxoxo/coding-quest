@@ -3,7 +3,7 @@ A = []
 SEP = '\n\t'
 for line in lines:
     l = line.split()
-    name, _, a, b, c = '_'.join(l[:-4]), l[-4], l[-3], l[-2], l[-1]
+    name, _, a, b, c = ' '.join(l[:-4]), l[-4], l[-3], l[-2], l[-1]
     print(name, SEP, _, a,b,c)
     A.append( (name, float(a), float(b), float(c)) )
 print('/end \n')

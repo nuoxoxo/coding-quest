@@ -3,10 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	_ "math"
 	"os"
-	_ "reflect"
-	_ "sort"
 	"strconv"
 	"strings"
 )
@@ -27,14 +24,14 @@ func main() {
 		}
 	}
 	Up, Down := A[:idx], A[idx+1:]
-	for _, a := range Up {
-		fmt.Println("/up", a)
+	for _, arr := range Up {
+		fmt.Println("/up", arr)
 	}
-	for _, a := range Down {
-		fmt.Println("/down", a)
+	for _, arr := range Down {
+		fmt.Println("/down", arr)
 	}
 	head := Up[0]
-	R, C := len(Up), len(Up[0])
+	R, C := len(Up), len(Up[1])
 	adj := map[string]int{}
 	fmt.Println(R, C)
 	r := 1
@@ -47,13 +44,30 @@ func main() {
 			n, _ := strconv.Atoi(Up[r][c])
 			adj[name] = n
 			c++
-			fmt.Println(name, adj[name])
+			fmt.Println("/mapped", name, adj[name])
 		}
 		r++
 	}
-	for k, v := range adj {
-		fmt.Println(k, v)
+
+	dist := []int{}
+	for _, arr := range Down {
+		names := arr[3:]
+		N := len(names)
+		i := 0
+		temp := 0
+		for i < N-2 {
+			name := names[i] + names[i+2]
+			temp += adj[name]
+			i += 2
+		}
+		dist = append(dist, temp)
 	}
-	// TODO : parse this
-	// /down [Rover 1 route: base -> cx22 -> ta00 -> base -> xj84 -> base]
+	res := 0
+	for _, n := range dist {
+		res += n
+	}
+	fmt.Println("/res", res)
+	if 2467159258920 % res != 0 {
+		fmt.Println("/check your answer")
+	}
 }

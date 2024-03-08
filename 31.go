@@ -3,20 +3,12 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
-	_ "reflect"
+	"math"
 	"sort"
 	"strconv"
 	"strings"
 )
-
-type GLX interface {
-	name() string
-	a() float64
-	b() float64
-	c() float64
-}
 
 func main() {
 	A := [][]string{}

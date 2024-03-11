@@ -23,13 +23,10 @@ for c in key:
 for i, boo in enumerate(S):
     if not boo:
         c = chr(i + a)
-        if c == 'j':
-            if 'i' not in PF:
-                PF.append( 'i' )
-                S[chr[i]], S[chr[i - 1]] = True, True
-        else:
+        if c != 'j':
             PF.append( c )
             S[i] = True
+   
 print('/Playfair->str |', ''.join(PF))
 G = []
 edge = int(len(PF) ** .5)

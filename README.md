@@ -6,7 +6,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 
 | fi.    | no.     | what 
 | :----: | :-----: | :--- 
-| 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:21px;" />
+| 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:42px;" />
 ||
 |        |   37    | **Last Day**
 |        |   36    |
@@ -19,7 +19,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   29    | IPv4
 | ☑️      |   28    | Parsing spacelines
 ||
-| 2023   | <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:21px;" />
+| 2023   | <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:42px;" />
 ||
 | ☑️      |   27    | Dijkstra classic
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
@@ -32,7 +32,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   19    | 16th/leftmost bit flipped
 | ☑️      |   18    | simple dict
 ||
-| 2022   | <img src="https://i.imgur.com/MZUQHRb.jpg" style="width:21px;" />
+| 2022   | <img src="https://i.imgur.com/MZUQHRb.jpg" style="width:42px;" />
 ||
 | ☑️      |   17    | Binary string 
 | ☑️      |   16    | Hex string

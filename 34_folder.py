@@ -82,35 +82,10 @@ for _, data in D.items():
     if data['entire?'][0]:
         for line in data['none']:
             res += getNoneFolderSize(line)
-            # if 'FOLDER' not in line:
-            #     n = int(line.split()[1])
-            #     res += n
-            #     print(line, n)
-        for line in data['temp']:
-            res += getNoneFolderSize(line)
-            # if 'FOLDER' not in line:
-            #     n = int(line.split()[1])
-            #     res += n
-            #     print(line, n)
-        for line in data['dele']:
-            res += getNoneFolderSize(line)
-            # if 'FOLDER' not in line:
-            #     n = int(line.split()[1])
-            #     res += n
-            #     print(line, n)
-    else:
-        for line in data['temp']:
-            res += getNoneFolderSize(line)
-            # if 'FOLDER' not in line:
-            #     n = int(line.split()[1])
-            #     res += n
-            #     print(line, n)
-        for line in data['dele']:
-            res += getNoneFolderSize(line)
-            # if 'FOLDER' not in line:
-            #     n = int(line.split()[1])
-            #     res += n
-            #     print(line, n)
+    for line in data['temp']:
+        res += getNoneFolderSize(line)
+    for line in data['dele']:
+        res += getNoneFolderSize(line)
 print('/res', res)
 
 assert res in [349035592144, 103879262]

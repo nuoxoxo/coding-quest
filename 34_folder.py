@@ -26,6 +26,14 @@ for i, lines in enumerate(parts):
         else:
             D[n]['none'].append(line)
 
+def markDoomedFolder(line: str) -> None:
+    if 'FOLDER' in line:
+        n = int(line.split()[-1][:-1])
+        global D
+        if not D[n]['entire?'][0]:
+            mod = True
+        D[n]['entire?'][0] = True
+
 # nested folders
 mod = True
 while mod:
@@ -34,37 +42,42 @@ while mod:
         # destroy-all
         if data['entire?'][0]:
             for line in data['none']:
-                if 'FOLDER' in line:
-                    n = int(line.split()[-1][:-1])
-                    if not D[n]['entire?'][0]:
-                        mod = True
-                    D[n]['entire?'][0] = True
+                markDoomedFolder(line)
+                # if 'FOLDER' in line:
+                #     n = int(line.split()[-1][:-1])
+                #     if not D[n]['entire?'][0]:
+                #         mod = True
+                #     D[n]['entire?'][0] = True
             for line in data['temp']:
-                if 'FOLDER' in line:
-                    n = int(line.split()[-1][:-1])
-                    if not D[n]['entire?'][0]:
-                        mod = True
-                    D[n]['entire?'][0] = True
+                markDoomedFolder(line)
+                # if 'FOLDER' in line:
+                #     n = int(line.split()[-1][:-1])
+                #     if not D[n]['entire?'][0]:
+                #         mod = True
+                #     D[n]['entire?'][0] = True
             for line in data['dele']:
-                if 'FOLDER' in line:
-                    n = int(line.split()[-1][:-1])
-                    if not D[n]['entire?'][0]:
-                        mod = True
-                    D[n]['entire?'][0] = True
+                markDoomedFolder(line)
+                # if 'FOLDER' in line:
+                #     n = int(line.split()[-1][:-1])
+                #     if not D[n]['entire?'][0]:
+                #         mod = True
+                #     D[n]['entire?'][0] = True
         # not destroy-all
         else:
             for line in data['temp']:
-                if 'FOLDER' in line:
-                    n = int(line.split()[-1][:-1])
-                    if not D[n]['entire?'][0]:
-                        mod = True
-                    D[n]['entire?'][0] = True
+                markDoomedFolder(line)
+                # if 'FOLDER' in line:
+                #     n = int(line.split()[-1][:-1])
+                #     if not D[n]['entire?'][0]:
+                #         mod = True
+                #     D[n]['entire?'][0] = True
             for line in data['dele']:
-                if 'FOLDER' in line:
-                    n = int(line.split()[-1][:-1])
-                    if not D[n]['entire?'][0]:
-                        mod = True
-                    D[n]['entire?'][0] = True
+                markDoomedFolder(line)
+                # if 'FOLDER' in line:
+                #     n = int(line.split()[-1][:-1])
+                #     if not D[n]['entire?'][0]:
+                #         mod = True
+                #     D[n]['entire?'][0] = True
 
 # dbg : look through every Folder
 for key, data in D.items():

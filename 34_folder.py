@@ -1,6 +1,7 @@
 # 103879262
 from collections import defaultdict
-parts = open('34.1').read().split('Folder: ')[1:]
+import json
+parts = open('34.0').read().split('Folder: ')[1:]
 res = 0
 for i, part in enumerate(parts):
     #print('/part', part, '/len', len(part))
@@ -17,38 +18,89 @@ for i, lines in enumerate(parts):
     #for l in part:print(l)
     n = lines[0]
     for line in lines[1:]:
+        D[n]['entire?'] = [False]
         if 'temporary' in line.lower():
             D[n]['temp'].append(line)
         elif 'delete' in line.lower():
             D[n]['dele'].append(line)
         else:
             D[n]['none'].append(line)
+
+# nested folders
+mod = True
+while mod:
+    mod = False
+    for _, data in D.items():
+        # destroy-all
+        if data['entire?'][0]:
+            for line in data['none']:
+                if 'FOLDER' in line:
+                    n = int(line.split()[-1][:-1])
+                    if not D[n]['entire?'][0]:
+                        mod = True
+                    D[n]['entire?'][0] = True
+            for line in data['temp']:
+                if 'FOLDER' in line:
+                    n = int(line.split()[-1][:-1])
+                    if not D[n]['entire?'][0]:
+                        mod = True
+                    D[n]['entire?'][0] = True
+            for line in data['dele']:
+                if 'FOLDER' in line:
+                    n = int(line.split()[-1][:-1])
+                    if not D[n]['entire?'][0]:
+                        mod = True
+                    D[n]['entire?'][0] = True
+        # not destroy-all
+        else:
+            for line in data['temp']:
+                if 'FOLDER' in line:
+                    n = int(line.split()[-1][:-1])
+                    if not D[n]['entire?'][0]:
+                        mod = True
+                    D[n]['entire?'][0] = True
+            for line in data['dele']:
+                if 'FOLDER' in line:
+                    n = int(line.split()[-1][:-1])
+                    if not D[n]['entire?'][0]:
+                        mod = True
+                    D[n]['entire?'][0] = True
+
+# dbg : look through every Folder
 for key, data in D.items():
-    # dbg
-    print('/Folder', key)
-    for k, d in data.items():
-        print('/key', k)
-        for line in d: print('\t',line)
-        print()
-    print('--')
+    print(key, json.dumps(data, indent=2))
 
-tt4 = 0
-for k,d in D[4].items():
-    for line in d:
-        tt4 += int(line.split()[1])
-print('/tt4', tt4)
-tt0to3 = 0
-for i in range(4):
-    for k,d in D[i].items():
-        for line in d:
-            if 'delete' in line.lower():
-                tt0to3 += int(line.split()[1])
-            if 'temp' in line.lower():
-                if 'folder' not in line.lower():
-                    tt0to3 += int(line.split()[1])
-                # elif # how? i dont understand
+# calc
+res = 0
+for _, data in D.items():
+    if data['entire?'][0]:
+        for line in data['none']:
+            if 'FOLDER' not in line:
+                n = int(line.split()[1])
+                res += n
+                print(line, n)
+        for line in data['temp']:
+            if 'FOLDER' not in line:
+                n = int(line.split()[1])
+                res += n
+                print(line, n)
+        for line in data['dele']:
+            if 'FOLDER' not in line:
+                n = int(line.split()[1])
+                res += n
+                print(line, n)
+    else:
+        for line in data['temp']:
+            if 'FOLDER' not in line:
+                n = int(line.split()[1])
+                res += n
+                print(line, n)
+        for line in data['dele']:
+            if 'FOLDER' not in line:
+                n = int(line.split()[1])
+                res += n
+                print(line, n)
+print('/res', res)
 
-print('/tt0to3', tt0to3)
-print('/attempt', tt4 + tt0to3)
-print('/tomatch', 103879262)
-print('/res?', res, res - 9003131)
+assert res in [349035592144, 103879262]
+# attempts : 247654027296

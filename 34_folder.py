@@ -1,6 +1,6 @@
-# 103879262
 from collections import defaultdict
 import json
+
 parts = open('34.0').read().split('Folder: ')[1:]
 res = 0
 for i, part in enumerate(parts):
@@ -39,53 +39,23 @@ mod = True
 while mod:
     mod = False
     for _, data in D.items():
-        # destroy-all
         if data['entire?'][0]:
             for line in data['none']:
                 markDoomedFolder(line)
-                # if 'FOLDER' in line:
-                #     n = int(line.split()[-1][:-1])
-                #     if not D[n]['entire?'][0]:
-                #         mod = True
-                #     D[n]['entire?'][0] = True
-            for line in data['temp']:
-                markDoomedFolder(line)
-                # if 'FOLDER' in line:
-                #     n = int(line.split()[-1][:-1])
-                #     if not D[n]['entire?'][0]:
-                #         mod = True
-                #     D[n]['entire?'][0] = True
-            for line in data['dele']:
-                markDoomedFolder(line)
-                # if 'FOLDER' in line:
-                #     n = int(line.split()[-1][:-1])
-                #     if not D[n]['entire?'][0]:
-                #         mod = True
-                #     D[n]['entire?'][0] = True
-        # not destroy-all
-        else:
-            for line in data['temp']:
-                markDoomedFolder(line)
-                # if 'FOLDER' in line:
-                #     n = int(line.split()[-1][:-1])
-                #     if not D[n]['entire?'][0]:
-                #         mod = True
-                #     D[n]['entire?'][0] = True
-            for line in data['dele']:
-                markDoomedFolder(line)
-                # if 'FOLDER' in line:
-                #     n = int(line.split()[-1][:-1])
-                #     if not D[n]['entire?'][0]:
-                #         mod = True
-                #     D[n]['entire?'][0] = True
+        for line in data['temp']:
+            markDoomedFolder(line)
+        for line in data['dele']:
+            markDoomedFolder(line)
 
 # dbg : look through every Folder
+"""
 for key, data in D.items():
     print(key, json.dumps(data, indent=2))
+"""
 
 def getNoneFolderSize(line: str) -> int:
     if 'FOLDER' not in line:
-        print(line, n)
+        # print(line, n)
         return int(line.split()[1])
     return 0
 
@@ -101,5 +71,5 @@ for _, data in D.items():
         res += getNoneFolderSize(line)
 print('/res', res)
 
+# false attempts : 247654027296
 assert res in [349035592144, 103879262]
-# attempts : 247654027296

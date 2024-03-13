@@ -34,4 +34,5 @@ res_correct = Solution_correct(amount, coins)
 
 print('/wrong', res_coin)
 print('/right', res_correct)
+assert res_correct % (10 ** 12) == 769252066051
 

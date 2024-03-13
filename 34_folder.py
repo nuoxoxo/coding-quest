@@ -1,6 +1,7 @@
 # 103879262
 from collections import defaultdict
 parts = open('34.1').read().split('Folder: ')[1:]
+res = 0
 for i, part in enumerate(parts):
     #print('/part', part, '/len', len(part))
     parts[i] = part.splitlines()
@@ -8,6 +9,8 @@ for i, part in enumerate(parts):
     #print('/parts[i][1:]', parts[i][1:])
     for j in range(1, len(parts[i])):
         parts[i][j] = parts[i][j][3:]
+        if 'fold' not in parts[i][j].split()[1].lower():
+            res += int(parts[i][j].split()[1])
 D = defaultdict( lambda: defaultdict(list) )
 for i, lines in enumerate(parts):
     #print("/i", i)
@@ -48,4 +51,4 @@ for i in range(4):
 print('/tt0to3', tt0to3)
 print('/attempt', tt4 + tt0to3)
 print('/tomatch', 103879262)
-
+print('/res?', res, res - 9003131)

@@ -70,36 +70,47 @@ while mod:
 for key, data in D.items():
     print(key, json.dumps(data, indent=2))
 
+def getNoneFolderSize(line: str) -> int:
+    if 'FOLDER' not in line:
+        print(line, n)
+        return int(line.split()[1])
+    return 0
+
 # calc
 res = 0
 for _, data in D.items():
     if data['entire?'][0]:
         for line in data['none']:
-            if 'FOLDER' not in line:
-                n = int(line.split()[1])
-                res += n
-                print(line, n)
+            res += getNoneFolderSize(line)
+            # if 'FOLDER' not in line:
+            #     n = int(line.split()[1])
+            #     res += n
+            #     print(line, n)
         for line in data['temp']:
-            if 'FOLDER' not in line:
-                n = int(line.split()[1])
-                res += n
-                print(line, n)
+            res += getNoneFolderSize(line)
+            # if 'FOLDER' not in line:
+            #     n = int(line.split()[1])
+            #     res += n
+            #     print(line, n)
         for line in data['dele']:
-            if 'FOLDER' not in line:
-                n = int(line.split()[1])
-                res += n
-                print(line, n)
+            res += getNoneFolderSize(line)
+            # if 'FOLDER' not in line:
+            #     n = int(line.split()[1])
+            #     res += n
+            #     print(line, n)
     else:
         for line in data['temp']:
-            if 'FOLDER' not in line:
-                n = int(line.split()[1])
-                res += n
-                print(line, n)
+            res += getNoneFolderSize(line)
+            # if 'FOLDER' not in line:
+            #     n = int(line.split()[1])
+            #     res += n
+            #     print(line, n)
         for line in data['dele']:
-            if 'FOLDER' not in line:
-                n = int(line.split()[1])
-                res += n
-                print(line, n)
+            res += getNoneFolderSize(line)
+            # if 'FOLDER' not in line:
+            #     n = int(line.split()[1])
+            #     res += n
+            #     print(line, n)
 print('/res', res)
 
 assert res in [349035592144, 103879262]

@@ -8,7 +8,8 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | :----: | :-----: | :--- 
 | 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:21px;" />
 ||
-| -      |   34    | **No Solution** - Maybe graph?
+| ☑️      |   35    | DP like coin change
+| ☑️      |   34    | Hardcoded parsing
 | ☑️      |   33    | Playfair cipher
 | ☑️      |   32    | Parsing
 | ☑️      |   31    | 3 dimensional pythagoras

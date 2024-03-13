@@ -1,3 +1,4 @@
+# 103879262
 from collections import defaultdict
 parts = open('34.1').read().split('Folder: ')[1:]
 for i, part in enumerate(parts):
@@ -20,12 +21,31 @@ for i, lines in enumerate(parts):
         else:
             D[n]['none'].append(line)
 for key, data in D.items():
+    # dbg
     print('/Folder', key)
     for k, d in data.items():
         print('/key', k)
-        for line in d:
-            print('\t',line)
+        for line in d: print('\t',line)
         print()
     print('--')
 
+tt4 = 0
+for k,d in D[4].items():
+    for line in d:
+        tt4 += int(line.split()[1])
+print('/tt4', tt4)
+tt0to3 = 0
+for i in range(4):
+    for k,d in D[i].items():
+        for line in d:
+            if 'delete' in line.lower():
+                tt0to3 += int(line.split()[1])
+            if 'temp' in line.lower():
+                if 'folder' not in line.lower():
+                    tt0to3 += int(line.split()[1])
+                # elif # how? i dont understand
+
+print('/tt0to3', tt0to3)
+print('/attempt', tt4 + tt0to3)
+print('/tomatch', 103879262)
 

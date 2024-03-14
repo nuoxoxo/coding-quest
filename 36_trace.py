@@ -50,18 +50,14 @@ for lv, r, c in coordinate_path:
 
 for r in range(len(G[0])):
   for c in range(len(G[0][r])):
-    if G[0][r][c] == '.':
-      G[0][r][c] = ' '
-    if G[0][r][c] == '#':
-      G[0][r][c] = '.'
+    if G[0][r][c] == '.': G[0][r][c] = ' '
+    if G[0][r][c] == '#': G[0][r][c] = '-'
+    if G[0][r][c] == '$': G[0][r][c] = 'x'
 for r in range(len(G[1])):
   for c in range(len(G[1][r])):
-    if G[1][r][c] == '.':
-      G[1][r][c] = ' '
-    if G[1][r][c] == '#':
-      G[1][r][c] = '.'
-
-
+    if G[1][r][c] == '.': G[1][r][c] = ' '
+    if G[1][r][c] == '#': G[1][r][c] = '-'
+    if G[1][r][c] == '$': G[1][r][c] = 'x'
 
 print("Steps:", res)
 print("Coordinate Path:", coordinate_path)

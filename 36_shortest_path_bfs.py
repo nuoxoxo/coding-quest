@@ -12,7 +12,7 @@ def Solver(G):
 
     Seen = set()
     Seen.add( start )
-
+    path = []
     while Q:
         pos, res = Q.popleft()
         L, r, c = pos

@@ -1,4 +1,4 @@
-IN = 2
+IN = 0
 DIR = [
     (0, -1), # U
     (1, -1), # UR
@@ -40,7 +40,7 @@ def isMoveValid(B,player,move):
             B[r + dr * ofs][c + dc * ofs] == tokens[1-player]:
                 ofs += 1
         if -1 < r + dr * ofs < side and -1 < c + dc * ofs < side and \
-            B[r + dr * ofs][c + dc * ofs] == tokens[player]: # found a remote one that is my token
+            B[r + dr * ofs][c + dc * ofs] == tokens[player]: # my remote conn not found
                 return True
     #printer(B)
     print('/👆invalid move',move, '/player', tokens[player], '/pos',r, c)

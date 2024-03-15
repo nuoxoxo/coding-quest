@@ -91,21 +91,21 @@ func playRound(moves []string) [][]string {
 }
 
 func makeBoard(side int) [][]string {
-	B := [][]string{}
+	B := make([][]string, side)
 	r := 0
 	for r < side {
-		temp := []string{}
+		row := make([]string, side)
 		c := 0
 		for c < side {
-			temp = append(temp, ".")
+			row[c] = "."
 			c++
 		}
-		B = append(B, temp)
+		B[r] = row
 		r++
 	}
 	mid := side / 2
-	B[mid-1][mid-1], B[mid][mid] = "o", "o"
-	B[mid-1][mid], B[mid][mid-1] = "x", "x"
+	B[mid-1][mid-1], B[mid][mid] = o, o
+	B[mid-1][mid], B[mid][mid-1] = x, x
 	return B
 }
 

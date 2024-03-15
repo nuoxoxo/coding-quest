@@ -68,7 +68,7 @@ for moves in G:
         for dr,dc in DIR:
             ofs = 1 # checking if a remote conn exists
             while -1 < r + dr * ofs < side and -1 < c + dc * ofs < side and \
-                B[r + dr * ofs][c + dc * ofs] == tokens[1-player]: # XXX - Bug
+                B[r + dr * ofs][c + dc * ofs] == tokens[1-player]:
                 ofs += 1
             endr, endc = r + dr * ofs, c + dc * ofs
             if not -1 < endr < side or not -1 < endc < side or \

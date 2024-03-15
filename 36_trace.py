@@ -1,7 +1,7 @@
 from collections import deque
 
 def Solver(G):
-    DR, DC = [-1, 1, 0, 0], [0, 0, 1, -1]
+    DR, DC = [0,-1,0,1], [-1,0,1,0]
     levels = len(G)
     assert levels == 2
     R, C = len(G[0]), len(G[0][0])
@@ -16,12 +16,12 @@ def Solver(G):
         pos, res = Q.popleft()
         L, r, c = pos
         if pos == end:
-            coordinate_path = [end]
+            fullpath = [end]
             while pos != start:
                 pos = path[pos]
-                coordinate_path.append(pos)
-            coordinate_path.reverse()
-            return res, coordinate_path
+                fullpath.append(pos)
+            fullpath = fullpath[::-1]
+            return res, fullpath
 
         for dr, dc in zip(DR, DC):
             rr, cc = r + dr, c + dc
@@ -37,31 +37,26 @@ def Solver(G):
                 path[(1 - L, rr, cc)] = pos
     return -1, []
 
-G = [[[c for c in s] for s in _.splitlines()] for _ in open('36.0').read().split('\n\n')]
-for g in G:
-  for gg in g:print(gg)
-  print()
+for i in [0,1]:
+  G = [[[c for c in s] for s in _.splitlines()] for _ in open('36.' + str(i)).read().split('\n\n')]
+  res, fullpath = Solver(G)
 
+  for lv, r, c in fullpath:G[lv][r][c] = '@'
 
-res, coordinate_path = Solver(G)
+  for r in range(len(G[0])):
+    for c in range(len(G[0][r])):
+      if G[0][r][c] == '.': G[0][r][c] = ' '
+      if G[0][r][c] == '#': G[0][r][c] = '-'
+      if G[0][r][c] == '$': G[0][r][c] = 'x'
+  for r in range(len(G[1])):
+    for c in range(len(G[1][r])):
+      if G[1][r][c] == '.': G[1][r][c] = ' '
+      if G[1][r][c] == '#': G[1][r][c] = '-'
+      if G[1][r][c] == '$': G[1][r][c] = 'x'
 
-for lv, r, c in coordinate_path:
-  G[lv][r][c] = '@'
-
-for r in range(len(G[0])):
-  for c in range(len(G[0][r])):
-    if G[0][r][c] == '.': G[0][r][c] = ' '
-    if G[0][r][c] == '#': G[0][r][c] = '-'
-    if G[0][r][c] == '$': G[0][r][c] = 'x'
-for r in range(len(G[1])):
-  for c in range(len(G[1][r])):
-    if G[1][r][c] == '.': G[1][r][c] = ' '
-    if G[1][r][c] == '#': G[1][r][c] = '-'
-    if G[1][r][c] == '$': G[1][r][c] = 'x'
-
-print("Steps:", res)
-print("Coordinate Path:", coordinate_path)
-for g in G:
-  for gg in g:print(''.join(gg))
-  print()
-print( len(coordinate_path) )
+  for g in G:
+    for gg in g:print(''.join(gg))
+    print()
+  print('/path 👆')
+  print('/res', res)
+  print('/maze', i, '/end \n')

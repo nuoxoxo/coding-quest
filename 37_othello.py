@@ -80,7 +80,7 @@ for moves in G:
             ofs = 1 # reset to execute a valid attack
             if endr != None and endc != None:
                 while -1 < r + dr * ofs < side and -1 < c + dc * ofs < side and \
-                    B[r + dr * ofs][c + dc * ofs] == tokens[1-player]: # XXX - Bug
+                    B[r + dr * ofs][c + dc * ofs] == tokens[1-player]:
                     B[r + dr * ofs][c + dc * ofs] = tokens[player] # placing my token
                     ofs += 1
         if move in ['i15', 'l14']:

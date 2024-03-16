@@ -49,8 +49,7 @@ while mod:
 
 # dbg : look through every Folder
 """
-for key, data in D.items():
-    print(key, json.dumps(data, indent=2))
+for key, data in D.items(): print(key, json.dumps(data, indent=2))
 """
 
 def getNoneFolderSize(line: str) -> int:

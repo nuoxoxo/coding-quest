@@ -37,6 +37,8 @@ def Solver(G):
                 path[(1 - L, rr, cc)] = pos
     return -1, []
 
+RES = []
+
 for i in [0,1]:
   G = [[[c for c in s] for s in _.splitlines()] for _ in open('36.' + str(i)).read().split('\n\n')]
   res, fullpath = Solver(G)
@@ -60,3 +62,6 @@ for i in [0,1]:
   print('/path 👆')
   print('/res', res)
   print('/maze', i, '/end \n')
+  RES.append(res)
+
+assert all([_ in [53, 251] for _ in RES])

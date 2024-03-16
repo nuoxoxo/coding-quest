@@ -39,6 +39,9 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   15    | Floodfill DFS - Asteroid I
 | ☑️      |   14    | Wordle (guess a word)
 | ☑️      |   13    | Snakes and ladders
+||
+| 2022   |   🧪    | Practice round
+||
 |        |   12    | ( empty )
 |        |   11    | ( empty )
 | ☑️      |   10    | Steganography

@@ -7,7 +7,6 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | fi.    | no.     | what 
 | :----: | :-----: | :--- 
 | 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:42px;" />
-||
 |        |   37    | **Othello** - withdrawn 
 | ☑️      |   36    | BFS : shortest path
 | ☑️      |   35    | DP like coin change
@@ -20,7 +19,6 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   28    | Parsing spacelines
 ||
 | 2023   | <img src="https://i.imgur.com/Su2FnSd.jpg" style="width:42px;" />
-||
 | ☑️      |   27    | Dijkstra classic
 | ☑️      |   26    | Binary search tree [make](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
 | ☑️      |   25    | Traveling salesman (TSP)
@@ -33,7 +31,6 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   18    | simple dict
 ||
 | 2022   | <img src="https://i.imgur.com/MZUQHRb.jpg" style="width:42px;" />
-||
 | ☑️      |   17    | Binary string 
 | ☑️      |   16    | Hex string
 | ☑️      |   15    | Floodfill DFS - Asteroid I
@@ -41,7 +38,6 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | ☑️      |   13    | Snakes and ladders
 ||
 | 2022   |   🧪    | Practice round
-||
 |        |   12    | ( empty )
 |        |   11    | ( empty )
 | ☑️      |   10    | Steganography

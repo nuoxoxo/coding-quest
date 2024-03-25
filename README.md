@@ -8,7 +8,7 @@ My solutions for [codingquest.io](https://codingquest.io/)
 | :----: | :-----: | :--- 
 | 2024   | <img src="https://i.imgur.com/sQbdEoH.jpeg" style="width:42px;" />
 ||
-|        |   37    | **Othello** - withdrawn due to failed checker
+|        |   37    | **Othello** - withdrawn 
 | ☑️      |   36    | BFS : shortest path
 | ☑️      |   35    | DP like coin change
 | ☑️      |   34    | Hardcoded parsing
